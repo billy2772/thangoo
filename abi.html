@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday SPL </title>
+    <style>
+        body{
+            background-image: url(https://i.makeagif.com/media/2-01-2022/RS1S4N.gif);
+            background: cover;
+            background-size: cover;
+            backface-visibility: visible;
+        }
+        .b{
+            background-color: black;
+            position: absolute;
+            opacity: 0.6;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .text{
+            color: white;
+            padding-top: 200px;
+            padding-left: 450px;
+        }
+        button{
+            margin-left: 580px;
+            
+        }
+        input{
+            opacity: 0.1;
+        }
+        
+    </style>
+    <meta http-equiv="white" content="5; url=destination_page.html">
+    <script>
+    function slowChange(url, event) {
+    event.preventDefault(); // Stop the default fast navigation
+    setTimeout(function() {
+        window.location.href = url; // Change page after a delay (e.g., 3000ms or 3 seconds)
+    }, 2000);
+
+}
+function Password() {
+
+    const correctPassword = "Abirami27";
+    const enteredPassword = document.getElementById("passwordInput").value;
+    const messageArea = document.getElementById("message");
+
+    if (enteredPassword === correctPassword) {
+        messageArea.textContent = "Success! Redirecting...";
+        messageArea.style.color = "green";
+        window.location.href = "abi2.html";
+    } else {
+        messageArea.textContent = "Incorrect password. Please try again.";
+        messageArea.style.color = "red";
+    }
+}
+
+    </script>
+</head>
+<body>
+    <div class="b">
+    <h1 class="text">Happy Birthday thangoooo💗</h1>
+    <center><input type="password" id="passwordInput">
+    <p id="message"></p>
+    </center>
+   <button onclick="Password()">Click to Surprice</button>
+    </div>
+
+</body>
+</html>
